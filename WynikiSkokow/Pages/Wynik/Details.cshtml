@@ -1,0 +1,61 @@
+﻿@page
+@model WynikiSkokow.Pages.Wynik.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Skoczek</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Imie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Imie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Nazwisko)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Nazwisko)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Kraj)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Kraj)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Skok1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Skok1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Skok2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Skok2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Punkty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Punkty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Miejsce)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Miejsce)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Skoczek.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

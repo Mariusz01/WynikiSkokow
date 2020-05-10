@@ -1,0 +1,64 @@
+﻿@page
+@model WynikiSkokow.Pages.Wynik.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Skoczek</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Imie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Imie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Nazwisko)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Nazwisko)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Kraj)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Kraj)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Skok1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Skok1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Skok2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Skok2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Punkty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Punkty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skoczek.Miejsce)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skoczek.Miejsce)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Skoczek.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
