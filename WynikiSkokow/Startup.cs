@@ -45,6 +45,7 @@ namespace WynikiSkokow
         {
             if (env.IsDevelopment())
             {
+                app.UseRequestLocalization("en-UY", "fr-FR");
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
             }
